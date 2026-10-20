@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Kishore Beauty Parlour logo">
+  <circle cx="32" cy="32" r="30" fill="#FFF9F5" stroke="#C6A477" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#C6A477" stroke-width=".6" stroke-dasharray="2 3"/>
+  <path d="M32 13c3 5 3 9 0 13-3-4-3-8 0-13z" fill="#B87983"/>
+  <path d="M22 18c5 2 7 6 7 11-5-1-8-5-7-11zM42 18c-5 2-7 6-7 11 5-1 8-5 7-11z" fill="#C6A477" opacity=".85"/>
+  <text x="32" y="49" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="20" font-weight="600" fill="#292426">K</text>
+</svg>

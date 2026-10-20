@@ -1,0 +1,5 @@
+# Local editor / Claude preview settings
+.claude/
+.vercel/
+Thumbs.db
+.DS_Store

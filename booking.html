@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Book an Appointment | Kishore Beauty Parlour, Chennai</title>
+  <meta name="description" content="Book your appointment at Kishore Beauty Parlour, Chennai. Choose a service, pick a date and time, and we'll confirm quickly. WhatsApp and phone booking available.">
+  <meta name="theme-color" content="#B87983">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kishore Beauty Parlour">
+  <meta property="og:title" content="Book an Appointment | Kishore Beauty Parlour">
+  <meta property="og:description" content="Choose a service, pick a time, and we'll confirm your appointment.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=70">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="booking">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Book an Appointment</span></nav>
+        <span class="eyebrow">Booking</span>
+        <h1>Book Your Appointment</h1>
+        <p>Choose a service, pick a time, and we'll confirm within 24 hours.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split split--wide" style="align-items:start">
+        <div class="form-card reveal">
+          <form data-form="booking" data-success="#bookingSuccess">
+            <div class="form-grid form-grid--2">
+              <div class="field"><label for="b-name">Full Name</label><input id="b-name" class="input" name="name" type="text" autocomplete="name" required><span class="error" aria-live="polite"></span></div>
+              <div class="field"><label for="b-phone">Phone Number</label><input id="b-phone" class="input" name="phone" type="tel" autocomplete="tel" placeholder="10-digit mobile" required><span class="error" aria-live="polite"></span></div>
+              <div class="field full"><label for="b-email">Email Address</label><input id="b-email" class="input" name="email" type="email" autocomplete="email" required><span class="error" aria-live="polite"></span></div>
+              <div class="field full"><label for="b-service">Service</label><select id="b-service" class="input" name="service" required data-render="service-options"><option value="">Select a service</option></select><span class="error" aria-live="polite"></span></div>
+              <div class="field"><label for="b-date">Preferred Date</label><input id="b-date" class="input" name="date" type="date" required><span class="error" aria-live="polite"></span></div>
+              <div class="field"><label for="b-time">Preferred Time</label>
+                <select id="b-time" class="input" name="time" required>
+                  <option value="">Select a time</option>
+                  <option>9:00 AM – 10:00 AM</option><option>10:00 AM – 11:00 AM</option><option>11:00 AM – 12:00 PM</option><option>12:00 PM – 1:00 PM</option>
+                  <option>2:00 PM – 3:00 PM</option><option>3:00 PM – 4:00 PM</option><option>4:00 PM – 5:00 PM</option><option>5:00 PM – 6:00 PM</option>
+                  <option>6:00 PM – 7:00 PM</option><option>7:00 PM – 8:00 PM</option>
+                </select><span class="error" aria-live="polite"></span></div>
+              <div class="field full"><label for="b-notes">Additional Notes or Special Requests <span class="muted" style="font-weight:400">(optional)</span></label><textarea id="b-notes" class="input" name="notes" placeholder="E.g. hair length, skin concerns, event date, number of people"></textarea></div>
+              <div class="full"><button class="btn btn--primary btn--block" type="submit"><i data-lucide="calendar-check"></i>Book Appointment</button></div>
+            </div>
+            <p class="muted" style="font-size:.8rem;margin-top:1rem">By booking, you agree to our <a href="privacy-policy.html" style="color:var(--rose-dark);text-decoration:underline">Privacy Policy</a>.</p>
+          </form>
+          <div class="form-success" id="bookingSuccess" role="status">
+            <div class="ic"><i data-lucide="calendar-heart"></i></div>
+            <h3>Your booking request is ready!</h3>
+            <p class="muted">Tap below to send it to us on WhatsApp — we'll confirm your appointment within a few hours. You can also send it by email.</p>
+            <div class="btn-row" style="justify-content:center">
+              <a class="btn btn--wa" data-wa-send href="#">Send Booking on WhatsApp</a>
+              <a class="btn btn--secondary" data-mail-send href="#"><i data-lucide="mail"></i>Send by Email</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="reveal text-left">
+          <div class="who-card" style="margin-bottom:1rem">
+            <h3 style="display:flex;gap:.6rem;align-items:center"><i data-lucide="message-circle"></i>Prefer to book on WhatsApp?</h3>
+            <p class="muted">Chat with us and book in under a minute.</p>
+            <a class="btn btn--wa" data-link="wa" data-wa-icon href="#">Chat with Us</a>
+          </div>
+          <div class="who-card" style="margin-bottom:1rem">
+            <h3 style="display:flex;gap:.6rem;align-items:center"><i data-lucide="phone"></i>Call us directly</h3>
+            <p class="muted" style="margin-bottom:.4rem"><a data-link="tel" href="#" data-site="phoneDisplay" style="font-weight:600;color:var(--charcoal)"></a></p>
+            <div data-render="hours"></div>
+          </div>
+          <div class="notice"><i data-lucide="badge-check"></i><span>We'll confirm your appointment within a few hours. For bridal bookings, please book at least 4–8 weeks in advance.</span></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
