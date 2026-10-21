@@ -95,7 +95,6 @@
           '<div class="footer-bottom"><span>© ' + S.year + " " + esc(S.name) + ". All rights reserved.</span><span><a href=\"" + link("privacy-policy.html") + "\">Privacy Policy</a> · Designed with love for beautiful women. ♡</span></div>" +
         "</div>" +
       "</footer>" +
-      '<a class="fab fab--call" href="' + tel() + '" aria-label="Call ' + esc(S.name) + '"><i data-lucide="phone"></i></a>' +
       '<a class="fab fab--wa" href="' + wa() + '" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">' + WA_ICON + "</a>" +
       '<nav class="mobile-bar" aria-label="Quick actions">' +
         '<a href="' + tel() + '"><i data-lucide="phone"></i><span>Call</span></a>' +
