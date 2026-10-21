@@ -80,8 +80,8 @@
                 '<a href="' + wa() + '" target="_blank" rel="noopener" aria-label="WhatsApp">' + WA_ICON + "</a>" +
               "</div>" +
             "</div>" +
-            "<div><h4>Quick Links</h4><ul>" +
-              navItems([["index.html", "Home"], ["about.html", "About Us"], ["services.html", "Services"], ["bridal.html", "Bridal Makeup"], ["gallery.html", "Gallery"], ["pricing.html", "Pricing"], ["offers.html", "Offers"], ["testimonials.html", "Reviews"], ["contact.html", "Contact"], ["booking.html", "Book Appointment"], ["privacy-policy.html", "Privacy Policy"]]) +
+            "<div><h4>Quick Links</h4><ul class=\"footer-links\">" +
+              navItems([["index.html", "Home"], ["about.html", "About"], ["services.html", "Services"], ["bridal.html", "Bridal"], ["gallery.html", "Gallery"], ["pricing.html", "Pricing"], ["offers.html", "Offers"], ["contact.html", "Contact"]]) +
             "</ul></div>" +
             "<div><h4>Services</h4><ul>" + svcLinks + "</ul></div>" +
             "<div><h4>Visit Us</h4><ul class=\"footer-contact\">" +
@@ -92,7 +92,7 @@
               '<li><i data-lucide="clock"></i><span>' + S.hours.map(function (h) { return esc(h[0]) + ": " + esc(h[1]); }).join("<br>") + "</span></li>" +
             "</ul></div>" +
           "</div>" +
-          '<div class="footer-bottom"><span>© ' + S.year + " " + esc(S.name) + ". All rights reserved.</span><span>Designed with love for beautiful women. ♡</span></div>" +
+          '<div class="footer-bottom"><span>© ' + S.year + " " + esc(S.name) + ". All rights reserved.</span><span><a href=\"" + link("privacy-policy.html") + "\">Privacy Policy</a> · Designed with love for beautiful women. ♡</span></div>" +
         "</div>" +
       "</footer>" +
       '<a class="fab fab--call" href="' + tel() + '" aria-label="Call ' + esc(S.name) + '"><i data-lucide="phone"></i></a>' +

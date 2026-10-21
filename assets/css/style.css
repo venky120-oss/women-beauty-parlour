@@ -348,6 +348,7 @@ textarea.input { min-height: 120px; resize: vertical; }
 .site-footer ul li { margin-bottom: .55rem; }
 .site-footer a { transition: color .25s; }
 .site-footer a:hover { color: var(--gold); }
+.footer-links { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1rem; }
 .footer-contact li { display: flex; gap: .7rem; align-items: flex-start; }
 .footer-contact svg { color: var(--gold); margin-top: .3rem; }
 .socials { display: flex; gap: .6rem; margin-top: 1.3rem; }
